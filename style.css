@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #F5A623, #FF7E5F); /* Added gradient background */
+    color: black;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.header img {
+    height: 100px; /* Adjusted logo size */
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Reduced top and bottom padding */
+}
+.text-content {
+    max-width: 50%;
+}
+.text-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.text-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.text-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px; /* Increased margin-bottom for more space */
+}
+.text-content .cta-button {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: padding 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.text-content .cta-button:hover {
+    padding: 18px 33px; /* Slightly increase padding */
+}
+.text-content .cta-button:active {
+    transform: scale(0.95);
+}
+.image-content {
+    position: relative;
+    max-width: 50%;
+}
+.image-content img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
+}
+.image-content img:hover {
+    transform: scale(1.05);
+    filter: blur(5px) brightness(0.5);
+}
+.image-content .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.image-content:hover .overlay-text {
+    opacity: 1;
+}
+.container2 {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+.header2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header2 h1 {
+    color: #FF8C00;
+    font-size: 28px;
+    margin: 0;
+}
+.header2 p {
+    color: #4A4A4A;
+    font-size: 20px;
+    margin: 5px 0 0 0;
+}
+.content2 {
+    display: flex;
+    align-items: center;
+}
+.content2 img {
+    max-width: 100%;
+    border: 5px solid #FF8C00;
+    margin-right: 20px;
+    /* transition: transform 0.3s, box-shadow 0.3s; */
+    width: 400px;
+    height: auto;
+}
+/* .content2 img:hover {
+    transform: perspective(1000px) rotateY(10deg);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+} */
+.content2 p {
+    color: #4A4A4A;
+    font-size: 16px;
+    line-height: 1.5;
+    flex: 1;
+}
+.footer2 {
+    text-align: center;
+    margin-top: 20px;
+}
+.footer2 p {
+    color: #FF8C00;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer2 button {
+    background-color: #FF8C00;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.footer2 button:hover {
+    transform: scale(1.1);
+}
+
+.container3 {
+display: flex;
+justify-content: space-around;
+padding: 50px;
+}
+.feature3 {
+background-color: #f0f4f8;
+border: 1px solid #e0e0e0;
+border-radius: 8px;
+padding: 15px;
+text-align: center;
+width: 22%;
+}
+.feature3 img {
+width: 50px;
+height: 50px;
+margin-bottom: 20px;
+filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(-50deg) brightness(100%) contrast(100%);
+}
+.feature3 h3 {
+color: #ff6600;
+font-size: 18px;
+margin-bottom: 10px;
+}
+.feature3 p {
+color: #333;
+font-size: 14px;
+line-height: 1.6;
+}
+.container4 {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.H14 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.faq-item {
+    background-color: #e9f0f4;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.faq-item h2 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-item p {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-top: 10px;
+    line-height: 1.6;
+    display: none;
+}
+.faq-item i {
+    color: #4a4a4a;
+}
