@@ -211,3 +211,73 @@ line-height: 1.6;
 .faq-item i {
     color: #4a4a4a;
 }
+/* Ajustes gerais para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Muda a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens */
+        padding: 20px; /* Reduz o padding */
+    }
+
+    .text-content, .image-content {
+        max-width: 100%; /* Permite que o conteúdo ocupe toda a largura */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .text-content h1 {
+        font-size: 28px; /* Reduz o tamanho da fonte */
+    }
+
+    .text-content h2 {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+    }
+
+    .text-content p {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .header img {
+        height: 80px; /* Ajusta o tamanho do logo */
+    }
+
+    .content2 {
+        flex-direction: column; /* Muda a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .content2 img {
+        margin-right: 0; /* Remove a margem */
+        margin-bottom: 20px; /* Adiciona margem inferior */
+        width: 90%; /* Ajusta a largura da imagem */
+    }
+
+    .container3 {
+        flex-direction: column; /* Muda a direção do flex para coluna */
+        padding: 20px; /* Ajusta o padding */
+    }
+
+    .feature3 {
+        width: 90%; /* Ajusta a largura das features */
+        margin-bottom: 20px; /* Adiciona espaço entre as features */
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    .text-content h1 {
+        font-size: 24px; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .text-content h2 {
+        font-size: 18px; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .text-content p {
+        font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .footer2 button {
+        padding: 8px 16px; /* Reduz o padding do botão */
+        font-size: 14px; /* Reduz o tamanho da fonte do botão */
+    }
+}
